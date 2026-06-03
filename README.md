@@ -7,7 +7,8 @@
 ## Install
 
 ```bash
-claude plugin enable aiwrap
+claude plugin marketplace add aiwrap-dev/plugin-claude-code
+claude plugin install aiwrap
 ```
 
 Then authorize your device — type `/aiwrap:setup` inside Claude Code. A browser window will open for GitHub sign-in. Done.

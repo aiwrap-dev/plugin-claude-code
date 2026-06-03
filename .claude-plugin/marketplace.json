@@ -1,0 +1,23 @@
+{
+  "name": "aiwrap-dev",
+  "description": "AIWrap Claude Code Plugin marketplace",
+  "owner": {
+    "name": "AIWrap",
+    "url": "https://aiwrap.dev"
+  },
+  "plugins": [
+    {
+      "name": "aiwrap",
+      "description": "Automatically track your AI coding sessions and publish them to your AIWrap profile.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/aiwrap-dev/plugin-claude-code.git",
+        "path": ".",
+        "ref": "main"
+      },
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["tracking", "analytics", "sessions"]
+    }
+  ]
+}
