@@ -51,6 +51,12 @@ Stored at `~/.aiwrap/settings.json`:
 
 - `AIWRAP_URL` — Override the API base URL (default: `https://aiwrap.dev`)
 
+To test the plugin against a local AIWrap instance, export the variable before starting Claude Code:
+
+```bash
+export AIWRAP_URL=http://localhost:3000
+```
+
 ## License
 
 [MIT](./LICENSE.md)
