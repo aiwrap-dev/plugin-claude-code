@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/martinsbicudo/plugin-claude-code/main/logo.svg" alt="AIWrap" width="96" />
+  <img src="https://raw.githubusercontent.com/aiwrap-dev/plugin-claude-code/main/logo.svg" alt="AIWrap" width="42" />
   <h1>AIWrap Claude Code Plugin</h1>
   <p>Automatically tracks your AI coding sessions and publishes them to your <a href="https://aiwrap.dev">aiwrap</a> profile.</p>
 </div>
