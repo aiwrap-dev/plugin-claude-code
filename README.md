@@ -1,11 +1,13 @@
-# AIWrap Claude Code Plugin
-
-Automatically tracks your AI coding sessions and publishes them to your [aiwrap](https://aiwrap.dev) profile.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/martinsbicudo/plugin-claude-code/main/logo.svg" alt="AIWrap" width="96" />
+  <h1>AIWrap Claude Code Plugin</h1>
+  <p>Automatically tracks your AI coding sessions and publishes them to your <a href="https://aiwrap.dev">aiwrap</a> profile.</p>
+</div>
 
 ## Install
 
 ```bash
-claude plugin enable /path/to/aiwrap-claude-plugin
+claude plugin enable aiwrap
 ```
 
 Then authorize your device — type `/aiwrap:setup` inside Claude Code. A browser window will open for GitHub sign-in. Done.
@@ -48,3 +50,7 @@ Stored at `~/.aiwrap/settings.json`:
 ## Environment variables
 
 - `AIWRAP_URL` — Override the API base URL (default: `https://aiwrap.dev`)
+
+## License
+
+[MIT](./LICENSE.md)

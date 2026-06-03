@@ -1,0 +1,15 @@
+{
+  "name": "plugin-claude-code",
+  "version": "1.0.0",
+  "description": "AIWrap Claude Code Plugin — automatically tracks your AI coding sessions and publishes them to your aiwrap profile.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "husky": "^9.1.7"
+  }
+}
