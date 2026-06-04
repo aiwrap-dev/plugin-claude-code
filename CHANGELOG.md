@@ -1,5 +1,11 @@
 # plugin-claude-code
 
+## 1.0.3
+
+### Patch Changes
+
+- 7fe3994: fix: replace changeset publish with gh release create for private package releases
+
 ## 1.0.2
 
 ### Patch Changes
