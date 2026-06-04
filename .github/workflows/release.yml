@@ -36,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create tag and release
-        if: startsWith(github.event.head_commit.message, 'chore: version packages')
+        if: "startsWith(github.event.head_commit.message, 'chore: version packages')"
         run: |
           VERSION=$(node -p "require('./package.json').version")
           NAME=$(node -p "require('./package.json').name")
