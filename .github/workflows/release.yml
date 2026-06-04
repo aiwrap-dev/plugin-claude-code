@@ -30,9 +30,19 @@ jobs:
 
       - uses: changesets/action@v1
         with:
-          publish: pnpm changeset tag
           title: 'chore: version packages'
           commit: 'chore: version packages'
-          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create tag and release
+        if: startsWith(github.event.head_commit.message, 'chore: version packages')
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          NAME=$(node -p "require('./package.json').name")
+          TAG="${NAME}@${VERSION}"
+          git tag -a "$TAG" -m "$TAG"
+          git push origin "$TAG"
+          gh release create "$TAG" --generate-notes --title "$TAG"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
