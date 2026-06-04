@@ -1,5 +1,11 @@
 # plugin-claude-code
 
+## 1.0.4
+
+### Patch Changes
+
+- 9f7cdd6: fix: correct release workflow trigger condition to detect Version Packages PR merge
+
 ## 1.0.3
 
 ### Patch Changes
