@@ -1,5 +1,13 @@
 # plugin-claude-code
 
+## 1.0.2
+
+### Patch Changes
+
+- 9b72492: ### Fixed
+  - Release workflow now correctly creates git tags and GitHub releases for
+    private packages (replaced `changeset publish` with `changeset tag`)
+
 ## 1.0.1
 
 ### Patch Changes

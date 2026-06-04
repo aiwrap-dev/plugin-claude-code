@@ -1,6 +1,6 @@
 {
   "name": "plugin-claude-code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "AIWrap Claude Code Plugin — automatically tracks your AI coding sessions and publishes them to your aiwrap profile.",
   "private": true,
   "license": "MIT",
