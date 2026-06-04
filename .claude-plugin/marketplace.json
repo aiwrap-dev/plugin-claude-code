@@ -9,7 +9,7 @@
     {
       "name": "aiwrap",
       "description": "Automatically track your AI coding sessions and publish them to your AIWrap profile.",
-      "source": ".",
+      "source": "./plugin",
       "version": "1.0.0",
       "category": "productivity",
       "tags": ["tracking", "analytics", "sessions"]

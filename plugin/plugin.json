@@ -1,0 +1,10 @@
+{
+  "name": "aiwrap",
+  "displayName": "AIWrap",
+  "version": "1.0.0",
+  "description": "Automatically track your AI coding sessions and publish them to your public profile.",
+  "author": {
+    "name": "aiwrap"
+  },
+  "homepage": "https://aiwrap.dev"
+}
