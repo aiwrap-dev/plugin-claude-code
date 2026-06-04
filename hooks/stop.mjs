@@ -40,10 +40,10 @@ function savePluginDir() {
   if (!pluginDir) return
   try {
     const dir = join(homedir(), '.aiwrap')
-    if (!existsSync(dir)) mkdirSync(dir, { recursive: true })
+    if (!existsSync(dir)) mkdirSync(dir, { recursive: true, mode: 0o700 })
     const current = readConfig() ?? {}
     if (current.plugin_dir === pluginDir) return
-    writeFileSync(CONFIG_PATH, JSON.stringify({ ...current, plugin_dir: pluginDir }, null, 2))
+    writeFileSync(CONFIG_PATH, JSON.stringify({ ...current, plugin_dir: pluginDir }, null, 2), { mode: 0o600 })
   } catch {
   }
 }
@@ -65,8 +65,8 @@ function readSessionState(sessionId) {
 function writeSessionState(sessionId, state) {
   try {
     const dir = join(homedir(), '.aiwrap')
-    if (!existsSync(dir)) mkdirSync(dir, { recursive: true })
-    writeFileSync(sessionStatePath(sessionId), JSON.stringify(state, null, 2))
+    if (!existsSync(dir)) mkdirSync(dir, { recursive: true, mode: 0o700 })
+    writeFileSync(sessionStatePath(sessionId), JSON.stringify(state, null, 2), { mode: 0o600 })
   } catch {
   }
 }

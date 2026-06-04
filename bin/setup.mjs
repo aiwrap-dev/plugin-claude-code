@@ -22,8 +22,8 @@ function readConfig() {
 }
 
 function writeConfig(data) {
-  if (!existsSync(CONFIG_DIR)) mkdirSync(CONFIG_DIR, { recursive: true })
-  writeFileSync(CONFIG_PATH, JSON.stringify(data, null, 2))
+  if (!existsSync(CONFIG_DIR)) mkdirSync(CONFIG_DIR, { recursive: true, mode: 0o700 })
+  writeFileSync(CONFIG_PATH, JSON.stringify(data, null, 2), { mode: 0o600 })
 }
 
 
