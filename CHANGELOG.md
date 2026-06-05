@@ -1,5 +1,14 @@
 # plugin-claude-code
 
+## 1.0.5
+
+### Patch Changes
+
+- 43eda8f: ### Fixed
+  - Setup skill no longer fails when the plugin directory is named differently than
+    `aiwrap-claude-plugin` — fallback discovery now searches by file content instead
+    of directory name
+
 ## 1.0.4
 
 ### Patch Changes
