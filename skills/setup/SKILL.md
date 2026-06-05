@@ -12,7 +12,7 @@ When the user invokes this skill:
 1. Find the setup script:
    - Run: `node -e "const fs=require('fs'),os=require('os'),p=os.homedir()+'/.aiwrap/settings.json';try{const c=JSON.parse(fs.readFileSync(p,'utf8'));console.log(c.plugin_dir||'')}catch{console.log('')}"`
    - If non-empty, use `<result>/bin/setup.mjs`
-   - If empty: `find ~ -path "*/aiwrap-claude-plugin/bin/setup.mjs" -maxdepth 8 2>/dev/null | head -1`
+   - If empty: `find ~ -path "*/bin/setup.mjs" -maxdepth 9 2>/dev/null | xargs grep -l "aiwrap.dev" 2>/dev/null | head -1`
 
 2. Run: `node "<path>"` ��� exits in ~1s, outputs 3 lines:
    - `setup:<url>` or `reconfigure:<url>`
